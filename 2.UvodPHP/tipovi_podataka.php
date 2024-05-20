@@ -26,3 +26,9 @@ $false = false;
 $age = 20;
 $is_of_age = ($age >= 18);
 echo $is_of_age;
+
+// KASTANJE
+(bool)$a;
+(string)$a; // -> promjena tipa podatka
+
+var_dump((string)$a);
