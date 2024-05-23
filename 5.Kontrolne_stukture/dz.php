@@ -21,7 +21,7 @@ $i = 1;
 
 $do_broja = 100;
 echo '<p style="color:ff0000">';
-for ($i=0; $i <= $do_broja; $i++) { 
+for ($i=1; $i <= $do_broja; $i++) { 
     if (($i % 3) === 0) {
         if ($i < ($do_broja-1)) {  // 1. način da nema zadnjeg zareza (bez googlanja:)
             echo "$i, ";
