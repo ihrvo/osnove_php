@@ -5,14 +5,19 @@ $primeNumbers =  [2, 3, 5, 7, 11];
 $containsThird = in_array(5, $primeNumbers);
 var_dump($containsThird);
 echo '<br>';
-if ($containsThird) echo $primeNumbers[2]; else echo "Treći element u nizu ne postoji.";
-$primeNumbers [] = 13;
+// if ($containsThird) echo $primeNumbers[2]; else echo "Treći element u nizu ne postoji.";
+// ISPRAVAK
+var_dump(isset($primeNumbers[2])) ;
+echo "Treći element u nizu " . isset($primeNumbers[2])  ? 'postoji' : 'ne postoji';
+$primeNumbers[] = 13;
 echo '<br>';
 var_dump(count($primeNumbers));
 echo '<pre>';
 print_r($primeNumbers);
 echo '</pre>';
-arsort($primeNumbers);
+// ISPRAVAK
+//arsort($primeNumbers);
+rsort($primeNumbers);
 echo '<pre>';
 print_r($primeNumbers);
 echo '</pre>';
@@ -54,6 +59,7 @@ echo '</pre>';
 foreach(array_keys($users) as $key) {
     unset($users[$key]['spol']);
  }
+
 
 echo '<pre>';
 print_r($users);
