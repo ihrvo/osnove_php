@@ -125,7 +125,4 @@ $dan = match ($date) {
     default => 'Danas nije dan:)'
 };
 
-
-
-
 echo '<p style="color:ff0000">'. $dan .'<p>';
