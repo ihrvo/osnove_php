@@ -32,3 +32,11 @@ echo $is_of_age;
 (string)$a; // -> promjena tipa podatka
 
 var_dump((string)$a);
+
+int $var = 12; // Integer (cjelobrojne vrijednosti)
+float $float = 1.34; // Float brojevi sa pokretnim zarezom
+$array = [1,2,3]]; // Array nizovi znakova
+$var = 12; // logičke vrijednosti
+$var = 12; // Polje
+$var = 12; // Objekti
+$var = 12; // 

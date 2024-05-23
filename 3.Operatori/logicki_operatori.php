@@ -17,6 +17,7 @@ var_dump ($a || $b); // OR operator, zahtijeva da jedan izraz istinit kako bi vr
 echo '<br>'; 
 var_dump(! ($a>$b) && ($b == $a)); // false
 echo '<br>'; 
+echo '<br>'; 
 
 // PRIORITETI -> prednost pri izvođenju izraza
 // ()
@@ -31,6 +32,18 @@ echo '<br>';
 
 
 
+$var = false;
+$var = 0;
+$var = 0.0;
+$var = '';
+$var = '0';
+$var = [];
+$var = NULL;
 
+
+
+if (! null ) {
+    echo "Izraz je istinit.";
+}
 
 
