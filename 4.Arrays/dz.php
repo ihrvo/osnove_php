@@ -1,7 +1,7 @@
 <?php
 // VJEŽBA 1
 echo '<b>VJEŽBA 1</b><br><br>';
-$primeNumbers = $names = [2, 3, 5, 7, 11];
+$primeNumbers =  [2, 3, 5, 7, 11];
 $containsThird = in_array(5, $primeNumbers);
 var_dump($containsThird);
 echo '<br>';
