@@ -8,7 +8,8 @@ echo '<br>';
 // if ($containsThird) echo $primeNumbers[2]; else echo "Treći element u nizu ne postoji.";
 // ISPRAVAK
 var_dump(isset($primeNumbers[2])) ;
-echo "Treći element u nizu " . isset($primeNumbers[2])  ? 'postoji' : 'ne postoji';
+echo '<br>';
+echo $treci_element = (isset($primeNumbers[2])) ? 'Treći element u nizu postoji' : 'Treći element u nizu ne postoji';
 $primeNumbers[] = 13;
 echo '<br>';
 var_dump(count($primeNumbers));
