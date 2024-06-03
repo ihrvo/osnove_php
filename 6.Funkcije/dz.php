@@ -49,7 +49,7 @@ rasponu od 1 do 10 te ispišite rezultat.
 
 function slucajniOdabir(int $broj)
 {
-    static $a = 0;
+    static $a = 0; // ako se ne setira na 0, automatski stavlja na 0
     $a += $broj;
     return $a;
 }
@@ -57,5 +57,5 @@ function slucajniOdabir(int $broj)
 $func ='slucajniOdabir';
 
 for ($i=1; $i < 6; $i++) { 
-    echo $i.'. slučajni broj: '.$func(rand(5, 10)).'<br>';
+    echo 'Stari zbroj: '.slucajniOdabir(0).' | '.$i.'. slučajni broj: '.$func(rand(5, 10)).'<br>';
 }

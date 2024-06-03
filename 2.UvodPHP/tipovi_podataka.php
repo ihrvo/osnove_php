@@ -15,7 +15,13 @@ $float_var = 0.123e8;
 
 // STRING
 
-$str = 'String';
+$str = 'Tekst u prvom redu \n<br> $float_var  \\Tekst u drugom redu unutar jednostrukih \' \' ';
+echo $str;
+echo '<br>';
+$str = "Tekst u prvom redu \n<br> $float_var  Tekst u drugom redu unutar dvostrukih ";
+echo $str;
+echo '<br>';
+echo '<br>';
 
 // Logičke vrijednosti - BOOLEAN
 
