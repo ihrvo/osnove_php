@@ -13,7 +13,7 @@ function izbrojiSamoglasnike (string $input_txt) {
     $samoglasnici = ['a', 'e', 'i', 'o', 'u'];
     $zbroj_samoglasnika = 0;
     foreach ($samoglasnici as $samoglasnik) {
-        $dodaj = substr_count($input_txt, $samoglasnik);
+        $dodaj = substr_count(strtolower($input_txt), $samoglasnik);
         $zbroj_samoglasnika += $dodaj;
     }
     
@@ -24,7 +24,7 @@ function izbrojiSuglasnike (string $input_txt) {
     $samoglasnici = ['a', 'e', 'i', 'o', 'u'];
     $broj_slova = mb_strlen($input_txt, 'UTF-8');
     foreach ($samoglasnici as $samoglasnik) {
-        $oduzmi = substr_count($input_txt, $samoglasnik);
+        $oduzmi = substr_count(strtolower($input_txt), $samoglasnik);
         $broj_slova -= $oduzmi;
     }
     
@@ -62,7 +62,7 @@ if(isset($_POST['rijec'])) {
             "broj_suglasnika" => $broj_samoglasnika,
             "broj_samoglasnika" => $broj_suglasnika
         ];
-        
+
         file_put_contents('words.json', $words_array);
     
     
